@@ -2,8 +2,8 @@ cask "snip" do
   arch arm: "arm64", intel: "x64"
 
   version "1.0.8"
-  sha256 arm:   "bc5f5509efc0a44f8cbd035c46c100ecba8cc2b7ed29b418486f2bbf06871cb6",
-         intel: "68d13450a4708e5a669de210bae3d16c9af4bf2976e09d2c835dbf8219b1d6ad"
+  sha256 arm:   "e06b80e7038ad4cdc75d3615104c1fd1bc28e03ad4f2120c15fe3a92bace5ad1",
+         intel: "72ca3c597e451130b06e13f32e5a658b2d11c95b0266af058f805ec33ca35432"
 
   url "https://github.com/rixinhahaha/snip/releases/download/v#{version}/Snip-#{version}-#{arch}.dmg"
   name "Snip"

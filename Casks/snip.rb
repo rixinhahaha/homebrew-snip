@@ -1,21 +1,14 @@
 cask "snip" do
-  version "1.0.13"
+  version "1.0.14"
+  sha256 "2642ee1328a738013ae07fed9e939e1c6d92d3ba1e917385566bffa177c2c29c"
 
-  on_arm do
-    sha256 "aece4c10b5f23c13ae21686a8fd81bd6b5443baa092d35a323907b1dde4c0100"
-    url "https://github.com/rixinhahaha/snip/releases/download/v#{version}/Snip-#{version}-arm64.dmg"
-  end
-
-  on_intel do
-    sha256 "6fd01f07df82ced869d81fb454e65d8f65a32bbc8df45101fd5a0427d36c732a"
-    url "https://github.com/rixinhahaha/snip/releases/download/v#{version}/Snip-#{version}-x64.dmg"
-  end
-
+  url "https://github.com/rixinhahaha/snip/releases/download/v#{version}/Snip-#{version}-arm64.dmg"
   name "Snip"
   desc "Screenshot app with annotation, AI-powered organization, and semantic search"
   homepage "https://github.com/rixinhahaha/snip"
 
   depends_on macos: ">= :ventura"
+  depends_on arch: :arm64
 
   livecheck do
     url :url

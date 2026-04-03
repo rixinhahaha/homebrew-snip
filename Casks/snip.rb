@@ -1,10 +1,10 @@
 cask "snip" do
-  version "1.3.7"
-  sha256 "dfeb47dd5e288482333d6e4c7a1d48b930638630ec405be0821d561350b9535e"
+  version "1.3.8"
+  sha256 "be19ed5d0b3f17190e690a7b2153631dfd3cc3e979eb97ed954bcf5bed3e0ed4"
 
   url "https://github.com/rixinhahaha/snip/releases/download/v#{version}/Snip-#{version}-arm64.dmg"
   name "Snip"
-  desc "Screenshot app with annotation, AI-powered organization, and semantic search"
+  desc "Visual mode for Claude Code — diagrams, previews, and screenshots"
   homepage "https://github.com/rixinhahaha/snip"
 
   depends_on macos: ">= :ventura"
@@ -16,11 +16,13 @@ cask "snip" do
   end
 
   app "Snip.app"
+  binary "#{appdir}/Snip.app/Contents/Resources/cli/snip", target: "snip"
 
   zap trash: [
     "~/Library/Application Support/snip",
     "~/Library/Caches/snip",
     "~/Library/Preferences/com.snip.app.plist",
     "~/Library/Saved Application State/com.snip.app.savedState",
+    "~/.snip",
   ]
 end

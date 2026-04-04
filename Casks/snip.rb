@@ -1,6 +1,6 @@
 cask "snip" do
-  version "1.3.9"
-  sha256 "79d151cad79631d7a054386cd9fa2d2b52bdbffcc7585addc484c58290b259b9"
+  version "1.3.10"
+  sha256 "4349b493e28d4b33b838c376a46173f32fb290674f617d275feb63c0c60dcc24"
 
   url "https://github.com/rixinhahaha/snip/releases/download/v#{version}/Snip-#{version}-arm64.dmg"
   name "Snip"
@@ -9,6 +9,7 @@ cask "snip" do
 
   depends_on macos: ">= :ventura"
   depends_on arch: :arm64
+  auto_updates true
 
   livecheck do
     url :url

@@ -1,6 +1,6 @@
 cask "snip" do
-  version "1.3.11"
-  sha256 "1c2545208868c22421b7d51fddec8d35232b7b668e2c0c167859a3272535ce35"
+  version "1.3.12"
+  sha256 "a3d8eb7107b16824d877f49e1db02ed984181f6f7caf1fc4d277b2544cd31b3f"
 
   url "https://github.com/rixinhahaha/snip/releases/download/v#{version}/Snip-#{version}-arm64.dmg"
   name "Snip"
